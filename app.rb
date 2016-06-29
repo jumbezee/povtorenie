@@ -44,3 +44,4 @@ post '/new' do
 	#перенаправление!!!!
 	redirect to('/')
 end
+
