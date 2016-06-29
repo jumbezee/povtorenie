@@ -2,11 +2,11 @@
 <br />
 <% @results.each do |post| %>
 	<p>
-		<%= post['content']%>
+		<h3>Author <%= post['username']%></h3> 
 		<br />
+		<h5><%= post['content']%></h5>
 		<br />
-		Added at <%= post['created_date']%>
-		<br />
+		<span style="font-size: 80%; color: #999">Added at <%= post['created_date']%></span>
 		<br />
 		<a href="/details/<%= post['id']%>">Comments</a>
 	</p>
