@@ -28,7 +28,8 @@ get '/new' do
 end
 
 get '/' do
-	erb :index 
+	@results = @db.execute 'select * from Posts order by id desc'
+	erb :insex 
 end
 
 post '/new' do
